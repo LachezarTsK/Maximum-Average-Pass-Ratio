@@ -77,7 +77,7 @@ func (pq *PriorityQueue) Push(object any) {
 
 func (pq *PriorityQueue) Pop() any {
     class := (*pq)[pq.Len() - 1]
-    (*pq)[pq.Len()-1] = nil
+    (*pq)[pq.Len() - 1] = nil
     *pq = (*pq)[0 : pq.Len() - 1]
     return class
 }
